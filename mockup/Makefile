@@ -45,6 +45,12 @@ bundle-filemanager:
 bundle-resourceregistry:
 	NODE_PATH=$(NODE_PATH) $(GRUNT) bundle-resourceregistry $(DEBUG) $(VERBOSE)
 
+bundle-thememapper:
+	NODE_PATH=$(NODE_PATH) $(GRUNT) bundle-thememapper $(DEBUG) $(VERBOSE)
+    # ----------------------------------------------------------------------- #
+	# cp build/thememapper* path/to/plone.app.theming/src/plone/app/browser/resources
+    # ----------------------------------------------------------------------- #
+
 docs:
 	if test ! -d docs; then $(GIT) clone git://github.com/plone/mockup.git -b gh-pages docs; fi
 	rm -rf docs/dev

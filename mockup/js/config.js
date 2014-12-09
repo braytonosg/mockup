@@ -47,6 +47,7 @@
       'marked': 'bower_components/marked/lib/marked',
       'mockup-bundles-docs': 'js/bundles/docs',
       'mockup-bundles-filemanager': 'js/bundles/filemanager',
+      'mockup-bundles-thememapper': 'js/bundles/thememapper',
       'mockup-bundles-plone': 'js/bundles/plone',
       'mockup-bundles-resourceregistry': 'js/bundles/resourceregistry',
       'mockup-bundles-structure': 'js/bundles/structure',
