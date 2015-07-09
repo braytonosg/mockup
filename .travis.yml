@@ -29,7 +29,7 @@ script:
 after_success:
   - if [ "$BROWSERS" == "SL_Chrome" ]; then ./node_modules/.bin/lcov-result-merger "coverage/**/lcov.info" | ./node_modules/.bin/coveralls; fi
 matrix:
-  fast_finish: true
+  fast_finish: false
   allow_failures:
     - env: BROWSERS="SL_IE_9"
     - env: BROWSERS="SL_IE_10,SL_IE_11"
