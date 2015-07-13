@@ -4,6 +4,9 @@ Changelog
 2.0.5 (unreleased)
 ------------------
 
+- show quick edit/view for items in structure row
+  [vangheem]
+
 - Accessibility fixes for structure:
     - label "cog"/actions
     - provide title attribute on buttons
