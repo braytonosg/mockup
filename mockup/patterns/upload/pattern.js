@@ -139,6 +139,12 @@ define([
         self.$el = self.$el.parent();
       }
 
+      // Do not display the upload form during an Archetype object creation
+      if ($('body').hasClass('template-atct_edit')) {
+        self.$el.append('<p>' + _t('You cannot upload file during creation.') + '</p>')
+          .find('.upload-container').hide();
+      }
+
       if (self.options.baseUrl && self.options.relativePath){
         // only use related items if we can generate paths based urls
         self.$pathInput = $('input[name="location"]', self.$el);
